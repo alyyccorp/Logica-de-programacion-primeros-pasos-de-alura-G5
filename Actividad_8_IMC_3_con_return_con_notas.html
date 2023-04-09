@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h1>Programa calculo de IMC</h1>
+
+<script>
+    function saltarLinea() {
+
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function calcularImc(peso,altura) {
+
+        imc = peso / (altura * altura);
+
+       return 10
+    }
+
+     //return normalmente tiene que regresar algo en este ejemplo el input son peso y altura, lo que procesa es basicamente la ejecucion de la formula y lo que le devuelve es el indice de masa corporal
+
+    var imcPersona1 = calcularImc (71,1.72) //Son los parametros del input para que me retorne el calculo de la funcion
+    var imcPersona2 = calcularImc (75,1.73) //Son los parametros del input para que me retorne el calculo de la funcion
+
+    imprimir ("El primedio del imc calculado de  Persona 1  y Persona 2 es: " + (imc1+imc2)/2);
+
+
+
+
+</script>

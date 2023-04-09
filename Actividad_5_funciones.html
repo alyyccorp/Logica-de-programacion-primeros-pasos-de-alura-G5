@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<h1> Programa </h1>
+
+<script>
+	
+	function saltarlinea() { 
+		document.write ("<br>"); 
+		document.write ("<br>");
+		document.write ("<br>"); 
+	} //las funciones van al inicio arriba de variables esto igual es por convencion y tambien por convencion tiene que estar identado, basicamente con la estrutuctura que se mira aqui
+
+	function imprimir (frase) {
+		document.write(frase);
+		saltarlinea (); //Dentro de una funcion llamamos a otra funcion y esta se integra en la funcion en este caso "imprimir"
+	}
+
+	imprimir ("hola amigos")
+
+
+	var anho = 2025; //estamos declarando la variables de anho para solo modificar esa y que se modifiquen todas las demas variables en las siguientes indicaciones
+
+	imprimir ("Juan tiene:" + (anho-2000) + "años");
+	imprimir ("Pedro tiene:" + (anho-1998) + "años");
+
+ 	anho = 2030  
+
+	imprimir("Carlos tiene:" + (anho-2003) + "años");
+
+
+
+</script>

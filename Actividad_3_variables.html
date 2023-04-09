@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+<h1> Programa </h1>
+
+<script>
+	
+	function saltarlinea() { 
+		document.write ("<br>"); 
+	} //las funciones van al inicio arriba de variables esto igual es por convencion
+
+
+	var anho = 2025; //estamos declarando la variables de anho para solo modificar esa y que se modifiquen todas las demas variables en las siguientes indicaciones
+
+	var saltodelinea = "<br><br>"
+
+	document.write("Juan tiene:" + (anho-2000) + "años");
+	document.write(saltodelinea);
+	document.write("Pedro tiene:" + (anho-1998) + "años");
+    document.write(saltodelinea);
+
+    saltarlinea (); //aqui llamo a mi funcion la cual e definido al inicio
+
+
+	anho = 2030 //Declaramos la variable por convencion unicamente al inicio despues solo cambiamos el valor del nombre de la variable en este caso el "anho" 
+
+	document.write("Carlos tiene:" + (anho-2003) + "años");
+	document.write(saltodelinea);
+	document.write(saltodelinea);
+
+	anho = 2020
+	document.write("Jimena tiene:" + (anho-2010) + "años");
+    document.write(saltodelinea);
+
+	document.write("Paola tiene:" + (anho-1995) + "años");
+	document.write(saltodelinea);
+
+	document.write("Laura tiene:" + (anho-2005) + "años");
+    document.write(saltodelinea);
+
+    var edadJimena = 10
+    var edadPaola = 25
+    var edadLaura = 15
+
+    var nombre1 = "Jimena"
+    var nombre2 = "Paola"
+    var nombre3 = "Laura"
+
+
+    promedio = (edadJimena + edadPaola + edadLaura)/3 
+
+	document.write("El promedio de las edades de " + nombre1 + ", " + nombre2 + " y " + nombre3 + " es: " + Math.round(promedio) + " años." );
+   document.write(saltodelinea);	
+
+</script>
